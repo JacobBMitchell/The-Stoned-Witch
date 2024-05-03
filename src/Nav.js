@@ -3,7 +3,8 @@ import { Link } from "react-router-dom"
 
 function Nav() {
     const navigate = useNavigate();
-    return <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
             <Link to="/" className="navbar-brand">The Stoned Witch</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,6 +22,7 @@ function Nav() {
             </div>
         </div>
     </nav>
+    )
 }
 
 export default Nav;
